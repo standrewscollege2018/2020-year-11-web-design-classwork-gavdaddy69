@@ -1,0 +1,13 @@
+.banner-container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.logo {
+  background-color: rgb(69, 255, 0);
+}
+
+.links {
+  background-color: rgb(69, 255, 0);
+  text-align: right;
+}
