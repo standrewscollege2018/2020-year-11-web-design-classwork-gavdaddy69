@@ -39,7 +39,6 @@ a:hover {
 
 .banner-container {
   display: grid;
-  /* seperate into columns and rows */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 100px)
 }
@@ -47,13 +46,12 @@ a:hover {
   background-color: rgb(0, 179, 255);
   padding: 20px;
   color: rgb(255, 255, 255);
-  margin-bottom: 0px
+  margin-bottom: -100px
 }
 .title a{
   color: rgb(255, 255, 255);
 }
 .register {
-  /* 20px each side of element */
   padding: 20px;
   background-color: rgb(0, 179, 255);
   text-align: right;
@@ -88,7 +86,6 @@ header {
 }
 .columns {
   display: flex;
-  /* specifies direction of flex container */
   flex-flow: row wrap;
   justify-content: center;
   margin: 5px 0;
@@ -101,17 +98,15 @@ header {
   top: 50%;
   right: 20%;
 }
-.jobs {
-  margin-left: -250px;
-  margin-top: 225px;
-  font-family: 'Noto Sans', sans-serif;
+.img-mac {
+  width: 50px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
-.jobs a{
-  color: rgb(0, 179, 255);
-}
-.jobamount {
-  color: rgb(0, 0, 0);
-  font-family: 'Noto Sans', sans-serif;
-  margin-left: -500px;
-  margin-top: -250px;
+.description {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  top: 40%;
+  margin-left: -700px;
+  margin-top: 125px;
 }

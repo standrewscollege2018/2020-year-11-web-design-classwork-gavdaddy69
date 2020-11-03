@@ -11,10 +11,12 @@ body{
   align-items: center;
   text-align: center;
   font-family: sans-serif;
+  /* aligns flexible containers items */
   justify-content: center;
   background: rgb(0, 179, 255);
 }
 .container{
+  /* positioned relative to its normal position */
   position: relative;
   width: 400px;
   background: white;
@@ -32,28 +34,38 @@ header{
   width: 100%;
 }
 .input-field input{
+  /* sizing */
   height: 100%;
   width: 100%;
+  /* color for border */
   border: 1px solid silver;
   padding-left: 15px;
   outline: none;
   font-size: 19px;
   transition: .4s;
 }
+/* element should get focused when page loads */
 input:focus{
   border: 1px solid #1DA1F2
 }
+/* where user can enter stuff */
 .input-field label{
+  /* position of element */
   position: absolute;
+  /* size */
   top: 50%;
   left: 15px;
+  /* moves the labels to -50% of y axis */
   transform: translateY(-50%);
+  /* how it reacts to pointer */
   pointer-events: none;
   color: grey;
   font-size: 18px;
+  /* transition time to move */
   transition: .4s;
 }
 input:focus ~ label{
+  /* moves to -33px on y axxis */
   transform: translateY(-33px);
   background: white;
   font-size: 16px;
@@ -68,6 +80,7 @@ form .button{
   position: absolute;
   height: 100%;
   width: 100%;
+  /* specifies stack order */
   z-index: -1;
   background: rgb(0, 179, 255);
 }
@@ -88,9 +101,12 @@ form .button{
   color: grey;
 }
 .links{
+  /* expands or shrinks to fill space or prevent overflow */
   display: flex;
+  /* cursor type when pointing at element */
   cursor: pointer;
 }
+/* both logos */
 .facebook, .google{
   height: 40px;
   width: 100%;
@@ -98,15 +114,19 @@ form .button{
   border-radius: 3px;
   margin: 0 10px;
 }
+/* color of logo when hovered */
 .facebook:hover{
   border: 1px solid #4267B2;
 }
+/* color of logo when hovered */
 .google:hover{
   border: 1px solid #dd4b39;
 }
+/* facebook logo colour */
 .facebook i, .facebook span{
   color: #4267B2;
 }
+/* google logo colour */
 .google i, .google span{
   color: #dd4b39;
 }
@@ -115,6 +135,7 @@ form .button{
   line-height: 40px;
   margin-left: -90px;
 }
+/* container for texxt */
 .links span{
   position: absolute;
   font-size: 17px;
@@ -131,6 +152,7 @@ form .button{
   text-decoration: none;
 }
 .signup a:hover{
+  /* underline when hovered over */
   text-decoration: underline;
 }
 .back{
@@ -143,5 +165,6 @@ form .button{
   text-decoration: none;
 }
 .back a:hover{
+  /* no decorations and all existing ones are removed */
   text-decoration: underline;
 }
